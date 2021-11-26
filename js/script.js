@@ -16,6 +16,7 @@ clearfunction(pokeResult)
     	
     	const name =  document.createElement("h2");
     	const table = document.createElement("table")
+    	const tbody = document.createElement("tbody")
     	const types = document.createElement("tr");
     	const sprite = document.createElement("img")
     	
@@ -38,6 +39,9 @@ const listFunction = function(elementHtml, list){
 for (tipe of list.types) {
     	 type = document.createElement("td")
     	 elementHtml.className = " table-secondary"
+    	 let th = document.createElement("th")
+    	 th.className = "row"
+    	 th.innerText = "type"
 			type.className= " row"
     		type.innerText = tipe.type.name
     		
